@@ -12,21 +12,6 @@ from tensorflow.keras.models import load_model
 from google.cloud import bigquery
 import RPi.GPIO as GPIO
 
-#query
-#client = bigquery.Client()
-#QUERY = (
-  # ' SELECT CASE WHEN DATA LIKE '%peace%' THEN 'true' END AS is_equal_to_peace FROM 'authentication.test123''
-#    'Select name FROM `authentication.test123` '
-#    ' WHERE DATA LIKE `%peace%` THEN `true` END AS is_equal_to_peace'
-      
-#)
-#job_config = bigquery.QueryJobConfig()
-#query_job = client.query(
- #   query,
-    #query.location="US",
-  #  job_config=job_config,
-#)
-
 # initialize mediapipe
 mpHands = mp.solutions.hands
 hands = mpHands.Hands(max_num_hands=1, min_detection_confidence=0.7)
